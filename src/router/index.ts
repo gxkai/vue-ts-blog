@@ -1,6 +1,7 @@
 import Vue, { AsyncComponent } from 'vue'
 import Router, { RouteConfig, Route, NavigationGuard } from 'vue-router'
-import Article from '../components/Article.vue'
+import Article from '../components/Article/Article.vue'
+import Home from '../components/Home/Home.vue'
 import Articles from './articles.json'
 
 const HelloWorld: AsyncComponent = (): any => import('@/components/HelloWorld.vue')
@@ -18,8 +19,8 @@ console.log(ArticleComponents)
 const routes: RouteConfig[] = [
   {
     path: '/',
-    name: 'HelloWorld',
-    component: HelloWorld
+    name: 'Home',
+    component: Home
   },
   {
     path: '/article',

@@ -1,0 +1,21 @@
+[
+  {
+    "tag": "javascript",
+    "file": "index.md",
+    "name": "JavascriptTest",
+    "title": "JS笔试题^_^",
+    "preview": "近日我司业务扩张,需要招聘几名前端工程师,所以让我出了一份前端的笔试题,供大家贻笑大方 ---- 笔试题部分",
+    "author": "zhangw",
+    "subTitle": "Javascript test for interview",
+    "createdTime": "2018-01-28"
+  },{
+    "tag": "javascript",
+    "file": "ask.md",
+    "name": "JavascriptOralTest",
+    "author": "zhangw",
+    "title": "JS面试题^_^",
+    "preview": "近日我司业务扩张,需要招聘几名前端工程师,所以让我出了一份前端的笔试题,供大家贻笑大方 ---- 面试题部分",
+    "subTitle": "Javascript test for interview",
+    "createdTime": "2018-01-28"
+  }
+]
