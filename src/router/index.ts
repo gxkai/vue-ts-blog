@@ -12,6 +12,7 @@ const ArticleComponents:any = Articles.map((item: any, index: number) => (
   {
     path: `${index}`,
     name: item.name,
+    meta: {id: index, all: Articles.length},
     component: () => import(`../articles/${item.file}`)
   }
 ))
@@ -27,13 +28,29 @@ const routes: RouteConfig[] = [
     name: 'Article',
     component: Article,
     children: ArticleComponents
+  },
+  {
+    path: '/resume',
+    name: 'Resume',
+    component: () => import('../components/Resume/index.vue')
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: () => import('../components/About/index.vue')
   }
 ]
 
 const router: Router = new Router({
-  mode: 'history',
   base: '/',
-  routes
+  routes,
+  scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { x: 0, y: 0 }
+    }
+  }
 })
 
 export default router

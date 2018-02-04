@@ -168,3 +168,9 @@ h6,
  border-radius: 3px;
  border: none
 }
+.avatar{
+  width: 128px;
+  height: 128px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}

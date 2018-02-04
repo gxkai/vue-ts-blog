@@ -3,8 +3,8 @@
     <router-view class="blog-post"/>
     <nav>
       <ul class="pager">
-        <li><a href="#">Previous</a></li>
-        <li><a href="#">Next</a></li>
+        <li><a href="#" v-if="hasPreviousArticle" @click.prevent="previous">Previous</a></li>
+        <li><a href="#" v-if="hasNextArticle" @click.prevent="next">Next</a></li>
       </ul>
     </nav>
   </div>
@@ -15,7 +15,21 @@ import Component from 'vue-class-component'
 
 @Component({})
 export default class Article extends Vue {
-  mounted () { }
+  get hasPreviousArticle () {
+    return this.$route.meta.id > 0
+  }
+  get hasNextArticle () {
+    return this.$route.meta.id < (this.$route.meta.all - 1)
+  }
+  next () {
+    this.$router.push('/article/' + (this.$route.meta.id + 1))
+  }
+  previous () {
+    this.$router.push('/article/' + (this.$route.meta.id - 1))
+  }
+  mounted () {
+    console.log(this.$route.meta)
+  }
 }
 </script>
 <style>

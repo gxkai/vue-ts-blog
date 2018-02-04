@@ -5,10 +5,11 @@
         <h1 class="blog-title">Zhangw Blog</h1>
         <p class="lead blog-description">Keep Calm and Carry On</p>
       </div>
-      <template v-for="(article, index) in articles">
+      <template v-for="(article, index) in pageArticles">
         <ArticleItem
           :key="index"
           :id="index"
+          :name="article.name"
           :title="article.title"
           :author="article.author"
           :preview="article.preview"
@@ -18,8 +19,8 @@
       </template>
       <nav>
         <ul class="pager">
-          <li><a href="#">Previous</a></li>
-          <li><a href="#">Next</a></li>
+          <li><a href="#" v-if="hasPreviousPage" @click.prevent="toPreviousPage">Previous</a></li>
+          <li><a href="#" v-if="hasNextPage" @click.prevent="toNextPage">Next</a></li>
         </ul>
       </nav>
     </div><!-- /.blog-main -->
@@ -48,23 +49,33 @@ import Vue from 'vue'
 import Component from 'vue-class-component'
 import ArticleItem from './components/ArticleItem.vue'
 import Articles from '@/articles/index.json'
-// import Avatar from '../../assets/img/avatar.jpeg'
 
 @Component({
   components: {
-   ArticleItem
+    ArticleItem
   }
 })
 export default class Home extends Vue {
   articles: Array<any> = Articles
-  mounted() {}
+  pageNum: number = 1
+  get pageArticles () {
+    return this.articles.slice((this.pageNum - 1) * 10, this.pageNum * 10)
+  }
+  get hasNextPage () {
+    return this.articles.length > this.pageNum * 10
+  }
+  get hasPreviousPage () {
+    return this.pageNum > 1
+  }
+  toNextPage () {
+    this.pageNum = this.pageNum + 1
+  }
+  toPreviousPage () {
+    this.pageNum = this.pageNum - 1
+  }
+  mounted () {}
 }
 </script>
 <style>
-.avatar{
-  width: 128px;
-  height: 128px;
-  border-radius: 4px;
-  margin-bottom: 8px;
-}
+
 </style>

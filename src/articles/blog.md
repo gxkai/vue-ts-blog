@@ -3,8 +3,8 @@
 > 一直以来都想搭建一个自己的博客, 但是刚好不久前阿里云的试用半年的服务器到期了..., 也一直没找到物美价廉(乞丐版)的服务器, emmmmm...但是博客还得搭呀, 所以就试着用Vue和Github Page搭建一个博客
 
 ### 分析部分
-搭建一个博客的必要条件 = 一个域名 + 一个服务器 + 博客前端
-刚好域名和服务器 Github page 都解决了,虽然不能部署服务程序, 但是对于搭建博客来说, 部署前端文件其实也就够了
+搭建一个博客的必要条件 = 一个域名 + 一个服务器 + 博客前端<br/>
+刚好域名和服务器 Github page 都解决了,虽然不能部署服务程序, 但是对于搭建博客来说, 部署前端文件其实也就够了<br/>
 博客的形式当然是选择markdown啦
 ### Github Page
 Github Page官方的描述是
@@ -87,7 +87,7 @@ import Blog from '@/articles/blog.md'
     Blog
   }
 })
-export class FeatureComponent extends Vue {}
+export class Blog extends Vue {}
 </script>
 ```
 效果如下 (ps: 我的效果是加过css美化之后的效果)

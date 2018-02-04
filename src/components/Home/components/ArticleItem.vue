@@ -18,14 +18,18 @@
 </div>
 </template>
 <script lang="ts">
-import Vue from "vue";
-import Component from "vue-class-component";
+import Vue from 'vue'
+import Component from 'vue-class-component'
 
 @Component({
   props: {
     id: {
       required: true,
       type: Number
+    },
+    name: {
+      required: true,
+      type: String
     },
     title: {
       required: true,
@@ -48,13 +52,9 @@ import Component from "vue-class-component";
     }
   }
 })
-export default class FeatureComponent extends Vue {
-  constructor() {
-    super()
-  }
+export default class ArticleItem extends Vue {
   onClick () {
-    console.log(this.$props.id)
-    this.$router.push(`/article/${this.$props.id}`)
+    this.$router.push({name: this.$props.name})
   }
 }
 </script>
@@ -64,6 +64,5 @@ export default class FeatureComponent extends Vue {
   }
   .article-item:hover{
     opacity: .6;
-    /* color: #7383a1; */
   }
 </style>
