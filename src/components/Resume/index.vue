@@ -1,5 +1,5 @@
 <template>
-  <div class="resume-container">
+  <div class="container">
     <hr/>
     <section class="person-info">
       <div class="col-sm-8 blog-main">

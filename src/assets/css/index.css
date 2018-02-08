@@ -174,3 +174,23 @@ h6,
   border-radius: 4px;
   margin-bottom: 8px;
 }
+.header-bac{
+  background-image: url(http://ww2.sinaimg.cn/large/0060lm7Tly1fo8w4pll9rj31kw11x43e.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 560px;
+  margin-bottom: 16px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .header-bac{
+    height: 360px;
+  }
+}
+.blog-header{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+}

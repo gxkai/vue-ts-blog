@@ -17,9 +17,7 @@
         </nav>
       </div>
     </div>
-    <div class="container">
       <router-view/>
-    </div><!-- /.container -->
     <footer class="blog-footer">
       <p>Blog template from <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
       <p>

@@ -1,11 +1,12 @@
-## 没有服务器的时候怎么搭建一个自己的博客 (上)
+## vue + typescript + markdown + github.io 搭建个人博客
 *created by zhangw*
 > 一直以来都想搭建一个自己的博客, 但是刚好不久前阿里云的试用半年的服务器到期了..., 也一直没找到物美价廉(乞丐版)的服务器, emmmmm...但是博客还得搭呀, 所以就试着用Vue和Github Page搭建一个博客
 
-### 分析部分
+### [live demo](https://only4ly.github.io) [Github仓库](https://github.com/only4ly/vue-ts-blog)
+### 思路
 搭建一个博客的必要条件 = 一个域名 + 一个服务器 + 博客前端<br/>
 刚好域名和服务器 Github page 都解决了,虽然不能部署服务程序, 但是对于搭建博客来说, 部署前端文件其实也就够了<br/>
-博客的形式当然是选择markdown啦
+博客的形式当然是选择markdown啦, 又方便又简单, 必要条件都具备了, 所以就开始吧
 ### Github Page
 Github Page官方的描述是
 > Websites for you and your projects. Hosted directly from your GitHub repository. Just edit, push, and your changes are live.
@@ -90,9 +91,10 @@ import Blog from '@/articles/blog.md'
 export class Blog extends Vue {}
 </script>
 ```
-效果如下 (ps: 我的效果是加过css美化之后的效果)
-![1](markdown-loader-eg.jpg)
-<!-- <img src="./markdown-loader-eg.jpg"/> -->
+
+#### 美化markdown样式
+bootstrap 中有非常多博客的模板, 我就贴一个使用的把
+<!-- 引入bootstrap, 在index.html中加入 -->
 ### 结束
 ok 到这一步, 我们就已经初步完成项目的搭建并且成功的解析了markdown文件。
-下一篇我们将一起完成这个简单的项目。
+至此, 剩下的步骤就是配置vue-router, 美化markdown样式, 引入highlight.js加入代码高亮, 对于各位老司机而言已经轻车熟路啦, 所以本篇就不赘述了, 下篇针对不太熟悉的同学讲下具体的思路和步骤吧 

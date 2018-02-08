@@ -12,7 +12,13 @@ const ArticleComponents:any = Articles.map((item: any, index: number) => (
   {
     path: `${index}`,
     name: item.name,
-    meta: {id: index, all: Articles.length},
+    meta: {
+      id: index,
+      all: Articles.length,
+      title: item.title,
+      subTitle: item.subTitle,
+      bac: item.bac
+    },
     component: () => import(`../articles/${item.file}`)
   }
 ))
