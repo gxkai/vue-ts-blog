@@ -2,7 +2,7 @@
 <div class="full-container">
   <div class="header-bac">
     <div class="blog-header">
-      <h1 class="blog-title">Zhangw Blog</h1>
+      <h1 class="blog-title">gxkai Blog</h1>
       <p class="lead blog-description">Keep Calm and Carry On</p>
     </div>
   </div>
@@ -33,14 +33,14 @@
         <div class="sidebar-module" style="margin-top: 30px;">
           <h4>About Me</h4>
           <img src="https://avatars1.githubusercontent.com/u/16274199?s=460&v=4" class="avatar" />
-          <p>写写代码, 养养多肉<br/>喧嚣一时, 孤独常伴</p>
+          <p>写写代码，看看比赛<br/>永远年轻，永远热泪盈眶</p>
         </div>
         <hr/>
         <div class="sidebar-module">
           <h4>Elsewhere</h4>
           <ol class="list-unstyled">
-            <li><a href="https://github.com/only4ly">GitHub</a></li>
-            <li><a href="https://juejin.im/user/57f6332a128fe100544c08f2">JueJin</a></li>
+            <li><a href="https://github.com/gxkai">GitHub</a></li>
+            <li><a href="https://juejin.im/user/59f900066fb9a044fa192a6a">JueJin</a></li>
             <li><a href="#">Weibo</a></li>
           </ol>
         </div>

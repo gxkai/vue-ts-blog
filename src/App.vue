@@ -19,7 +19,7 @@
     </div>
       <router-view/>
     <footer class="blog-footer">
-      <p>Blog template from <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>thanks <a href="https://github.com/only4ly/vue-ts-blog">@only4ly</a>.</p>
       <p>
         <a href="#">Back to top</a>
       </p>

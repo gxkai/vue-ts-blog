@@ -4,32 +4,34 @@
     <section class="person-info">
       <div class="col-sm-8 blog-main">
         <h4>
-          <span class="info-title">张威</span>
-          <span class="label label-success">前端工程师</span>
-          <span class="label label-success">一年工作经验</span>
-          <span class="label label-info">湖南大学</span>
+          <span class="info-title">顾旭凯</span>
+          <span class="label label-success">全栈工程师</span>
+          <span class="label label-success">四年工作经验</span>
+          <span class="label label-info">南京信息工程大学</span>
         </h4>
         <div>
-          <span class="info-title">现居:</span> 浙江杭州
+          <span class="info-title">现居:</span> 江苏昆山
           <br/>
-          <span class="info-title">公司:</span> 工地云数据运营有限公司
+          <span class="info-title">公司:</span> 祥云平台
           <br/>
-          <span class="info-title">手机:</span> 18673120494
+          <span class="info-title">手机:</span> 18896781024
           <br/>
-          <span class="info-title">技术栈:</span>  
-            <span class="label label-default">Vue</span> 
-            <span class="label label-default">React Native</span> 
-            <span class="label label-default">echarts</span>
+          <span class="info-title">技术栈:</span>
+            <span class="label label-default">Vue</span>
+            <span class="label label-default">Flutter</span>
+            <span class="label label-default">Node</span>
+            <span class="label label-default">JAVA</span>
+            <span class="label label-default">GO</span>
           <br/>
-          <span class="info-title">GitHub:</span> <a href="https://github.com/only4ly">only4ly</a>
+          <span class="info-title">GitHub:</span> <a href="https://github.com/gxkai">gxkai</a>
           <br/>
-          <span class="info-title">意向:</span> 前端工程师 12-15K
+          <span class="info-title">意向:</span> 全栈工程师 15-18K
         </div>
       </div>
       <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
         <div class="sidebar-module">
           <img src="https://avatars1.githubusercontent.com/u/16274199?s=460&v=4" class="avatar" />
-          <p>写写代码, 养养多肉<br/>喧嚣一时, 孤独常伴</p>
+          <p>写写代码，看看比赛<br/>永远年轻，永远热泪盈眶</p>
         </div>
       </div>
     </section>
