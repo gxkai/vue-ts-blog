@@ -10,7 +10,7 @@
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit/specs",
-    "build": "node build/build.js"
+    "build": "node build/build.js && scp -r dist root@139.196.102.55:/root/html\n"
   },
   "dependencies": {
     "github-markdown-css": "^2.10.0",
