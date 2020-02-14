@@ -32,7 +32,7 @@
         <!-- <hr/> -->
         <div class="sidebar-module" style="margin-top: 30px;">
           <h4>About Me</h4>
-          <img src="https://avatars1.githubusercontent.com/u/16274199?s=460&v=4" class="avatar" />
+          <img src="https://avatars2.githubusercontent.com/u/30716965?s=40&u=3570765d7758a482e2bc3dec62fd6309de00eaf8&v=4" class="avatar" />
           <p>写写代码，看看比赛<br/>永远年轻，永远热泪盈眶</p>
         </div>
         <hr/>
@@ -54,7 +54,7 @@
 import Vue from 'vue'
 import Component from 'vue-class-component'
 import ArticleItem from './components/ArticleItem.vue'
-import Articles from '@/articles/index.json'
+import Articles from '@/articles/list.json'
 // import bac from '@/assets/img/bac.jpg'
 
 @Component({

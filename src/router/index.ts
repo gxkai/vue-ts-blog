@@ -2,7 +2,7 @@ import Vue, { AsyncComponent } from 'vue'
 import Router, { RouteConfig, Route, NavigationGuard } from 'vue-router'
 import Article from '../components/Article/Article.vue'
 import Home from '../components/Home/Home.vue'
-import Articles from '../articles/index.json'
+import Articles from '@/articles/list.json'
 
 const HelloWorld: AsyncComponent = (): any => import('@/components/HelloWorld.vue')
 
